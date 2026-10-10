@@ -1,9 +1,9 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "com.surfacedby/ai-visibility",
-  "title": "SurfacedBy AI Visibility",
-  "description": "Check what AI can read on a website and whether an AI answer cites or names a brand. Free, no key.",
-  "version": "1.0.0",
+  "title": "SurfacedBy AI Visibility & GEO Audit",
+  "description": "Free AI visibility and GEO audit: see what AI reads on your site and whether its answers cite you.",
+  "version": "1.0.1",
   "websiteUrl": "https://surfacedby.com/tools/chatgpt-ai-visibility",
   "repository": {
     "url": "https://github.com/surfacedby/ai-visibility-mcp",
@@ -13,7 +13,9 @@
     {
       "src": "https://surfacedby.com/icon.png",
       "mimeType": "image/png",
-      "sizes": ["300x300"]
+      "sizes": [
+        "300x300"
+      ]
     }
   ],
   "remotes": [
