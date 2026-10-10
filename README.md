@@ -167,7 +167,7 @@ Read-only, idempotent. Makes no network request unless the answer cites through 
 
 | Input | Type | Notes |
 |---|---|---|
-| `platform` | string, optional | Limit the result to one AI platform. |
+| `platform` | string, optional | Limit the result to one AI platform: `chatgpt`, `perplexity`, `gemini`, `claude`, `ai_mode`, `grok` or `deepseek`. When the index has no figures for that platform yet, the result says so and lists the platforms it does cover. |
 | `topic` | string, optional | Select research findings on one topic, such as `reddit`, `crawlers` or `competitors`. |
 
 Returns, per AI platform, the share of citations by source category, recent shifts in specific sources and how its answers cite, from SurfacedBy's published AI Search Index, with the data date and a link to the public page, plus research findings with their samples, dates and post links. These are pooled rates across many brands, not measurements of any one business.
