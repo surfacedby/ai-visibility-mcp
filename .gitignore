@@ -1,0 +1,8 @@
+.DS_Store
+.env
+*.pem
+*.key
+# Local only: registry signing key, submission notes and the publisher binary
+.private/
+mcp-publisher*
+.mcp_publisher_token
