@@ -1,13 +1,13 @@
 # ai-visibility-mcp
 
-A free, hosted MCP server that shows what AI assistants can read on a business website, and whether an AI answer cites that website. No account, no API key.
+Find out what AI assistants understand about a business, and whether their answers recommend it. Free and hosted, with no account or API key.
 
-It gives your assistant (Claude, Cursor, VS Code or any other MCP client) two read-only tools:
+Connect it to Claude, Cursor, VS Code or any MCP client and your assistant can:
 
-- **Inspect a website's facts.** Reads up to five public pages and returns what can be extracted from them without a browser: sections, tables, headings, links and the structured business data (schema.org) the site declares.
-- **Check an AI answer.** Paste an answer from ChatGPT, Perplexity, Gemini or another assistant, plus the business URL. You get back whether the answer links to the website, only names the brand, or leaves it out.
+- **Audit any website the way AI reads it.** Pull the products, prices, policies, comparison tables and business details AI assistants rely on, from up to five pages at once. That includes the structured business data hidden in the page code, and any facts that disagree from one page to the next.
+- **Check whether an AI answer recommends you.** Paste an answer from ChatGPT, Perplexity, Gemini or any other assistant. See whether it cites your site, only mentions your name, or leaves you out, and which sources it cited instead.
 
-The server returns evidence and your assistant does the analysis, so every finding points back to a page or answer you can check yourself.
+Your assistant does the thinking and SurfacedBy supplies the evidence, so every recommendation links back to a page you can check.
 
 ```
 https://api.surfacedby.com/api/v1/mcp/public/
@@ -126,13 +126,11 @@ Returns the brand's presence in that one answer (`cited`, `named` or `not_observ
 
 Read-only, idempotent, makes no network requests.
 
-## What it does not do
+## Track it over time
 
-- It does not measure AI visibility. One answer is one observation, and a page inspection is not a ranking or a score.
-- It does not run JavaScript, log in, or get past bot challenges. A page that needs those comes back as unavailable or partial rather than guessed.
-- It does not change any website or publish anything.
+This server works on the pages and answers in your conversation. To track how ChatGPT, Perplexity, Gemini and other AI platforms mention your brand over time, which competitors they recommend instead, and which sources they trust, use [SurfacedBy](https://surfacedby.com). Or run a one-off check with the [free AI visibility checker](https://surfacedby.com/tools/ai-visibility-checker).
 
-If you need visibility measured over time (which prompts mention you on ChatGPT, Perplexity, Gemini and other AI platforms, which competitors appear instead, and which sources they cite), that is what [SurfacedBy](https://surfacedby.com) does. You can run a one-off check with the [free AI visibility checker](https://surfacedby.com/tools/ai-visibility-checker).
+Pages that need JavaScript, a login or a bot challenge to load are reported as unavailable, never guessed.
 
 ## Limits and fair use
 
